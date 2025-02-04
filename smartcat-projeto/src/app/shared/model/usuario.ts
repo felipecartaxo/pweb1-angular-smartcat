@@ -1,11 +1,13 @@
+import {Tarefa} from './tarefa';
+
 export class Usuario {
 
   private _id: number;
   private _nome: string;
   private _email: string;
-  private _tarefas: string[];
+  private _tarefas: Tarefa[];
 
-  constructor(id: number, nome: string, email: string, tarefas: string[] = []) {
+  constructor(id: number, nome: string, email: string, tarefas: Tarefa[] = []) {
     this._id = id;
     this._nome = nome;
     this._email = email;
@@ -36,19 +38,22 @@ export class Usuario {
     this._email = value;
   }
 
-  get tarefas(): string[] {
+  // É a mesma coisa que "listarTarefas()"
+  // get tarefas(): Tarefa[] {
+  //   return this._tarefas;
+  // }
+
+  adicionarTarefa(tarefa: Tarefa): void {
+    this._tarefas.push(tarefa);
+  }
+
+  listarTarefas(): Tarefa[] {
     return this._tarefas;
   }
 
-  // adicionarTarefa(tarefa: string): void {
-  //   this._tarefas.push(tarefa);
-  // }
-  //
-  // listarTarefas(): string[] {
-  //   return this._tarefas;
-  // }
-  //
-  // removerTarefa(tarefa: string): void {
-  //   this._tarefas = this._tarefas.filter(t => t !== tarefa);
-  // }
+  removerTarefa(tarefa: Tarefa): void {
+    this._tarefas = this._tarefas.filter(
+      t => t.titulo !== tarefa.titulo || t.data.getTime() !== tarefa.data.getTime()
+    );
+  }
 }
