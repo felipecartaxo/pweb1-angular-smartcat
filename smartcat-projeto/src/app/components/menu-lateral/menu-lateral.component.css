@@ -4,7 +4,7 @@ mat-list {
   flex-direction: column;
   flex-grow: 1;
 
-  max-width: 30%; /* Acho que dá pra melhorar isso */
+  /*max-width: 30%; !* Acho que dá pra melhorar isso *!*/
 }
 
 .menu-item {

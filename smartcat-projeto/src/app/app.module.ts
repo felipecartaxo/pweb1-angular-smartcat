@@ -11,12 +11,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatList, MatListItem } from '@angular/material/list';
-import { MatSidenavContainer } from '@angular/material/sidenav'; //
+import { MatSidenavContainer } from '@angular/material/sidenav';
+import { BarraSuperiorComponent } from './components/barra-superior/barra-superior.component';
+import { MatFormField } from "@angular/material/form-field";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    BarraSuperiorComponent
   ],
   imports: [
     BrowserModule,
@@ -26,11 +30,14 @@ import { MatSidenavContainer } from '@angular/material/sidenav'; //
     MatIconModule,
     MatList,
     MatListItem,
-    MatSidenavContainer
+    MatSidenavContainer,
+    MatFormField,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
