@@ -1,0 +1,16 @@
+.barra-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.botao-menu {
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.botao-menu:hover {
+    background-color: black;
+    color: white;
+}
