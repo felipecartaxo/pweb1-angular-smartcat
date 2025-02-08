@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    background-color: #a08ec8;
     padding: 10px;
+
+    /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
 }
 
 .botao-menu {
@@ -30,9 +31,13 @@
     align-self: center;
 }
 
+.icone-pesquisa {;
+    padding-left: 20px;
+}
+
 .foto-usuario {
-    font-size: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 50px;
 }
