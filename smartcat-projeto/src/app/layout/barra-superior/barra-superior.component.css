@@ -2,15 +2,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
+    background-color: #a08ec8;
+    padding: 10px;
 }
 
 .botao-menu {
     border-radius: 50px;
     margin-left: 10px;
+    border: 1px solid black;
 }
 
 .botao-menu:hover {
     background-color: black;
     color: white;
+}
+
+.barra-pesquisa_foto-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo-pesquisa {
+    flex-grow: 1;
+    align-self: center;
+}
+
+.foto-usuario {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
