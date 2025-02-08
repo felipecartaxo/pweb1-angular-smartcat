@@ -8,25 +8,30 @@ import { MatIcon } from '@angular/material/icon';
 import { MatInput } from '@angular/material/input';
 import { MatButton } from '@angular/material/button';
 import { MatMenuModule} from '@angular/material/menu';
+import { QuadroComponent } from './quadro/quadro.component';
+import { TarefaModule } from '../tarefa/tarefa.module';
 
 @NgModule({
   declarations: [
     BarraSuperiorComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    QuadroComponent
   ],
-  exports: [
-    BarraSuperiorComponent,
-    MenuLateralComponent
-  ],
-  imports: [
-    MatButton,
-    CommonModule,
-    MatList,
-    MatListItem,
-    MatIcon,
-    MatFormFieldModule,
-    MatInput,
-    MatMenuModule
-  ]
+    exports: [
+        BarraSuperiorComponent,
+        MenuLateralComponent,
+        QuadroComponent
+    ],
+    imports: [
+        MatButton,
+        CommonModule,
+        MatList,
+        MatListItem,
+        MatIcon,
+        MatFormFieldModule,
+        MatInput,
+        MatMenuModule,
+        TarefaModule
+    ]
 })
 export class LayoutModule { }
