@@ -1,4 +1,4 @@
-.barra-superior {
+.barra-superior-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,13 +12,14 @@
     /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
 }
 
-.botao-menu {
+.botao-smartcat {
+    font-size: 28px;
     border-radius: 50px;
     margin-left: 10px;
     border: 1px solid black;
 }
 
-.botao-menu:hover {
+.botao-smartcat:hover {
     background-color: black;
     color: white;
 }

@@ -1,13 +1,45 @@
 <!-- Considere colocar uma sidenav, é mais elegante -->
 
-<mat-list class="barra-lateral" role="list">
-  <p class="barra-lateral_titulo">Funcionalidades</p>
-  <mat-list-item class="menu-item" role="listitem"> <mat-icon>add_circle</mat-icon>Adicionar</mat-list-item>
-  <mat-list-item class="menu-item" role="listitem"><mat-icon>settings</mat-icon>Configuração</mat-list-item>
-  <mat-list-item class="menu-item" role="listitem"><mat-icon>bar_chart</mat-icon>Progresso</mat-list-item>
-  <mat-list-item class="menu-item" role="listitem"><mat-icon>calendar_month</mat-icon>Cronograma</mat-list-item>
-  <mat-list-item class="menu-item" role="listitem"><mat-icon>share</mat-icon>Compartilhar</mat-list-item>
-  <mat-list-item class="menu-item menu-last-item" role="listitem"><mat-icon>info</mat-icon>Ajuda</mat-list-item>
-</mat-list>
+<div class="menu-lateral-container">
+    <mat-list class="menu-lateral" role="list">
+        <p class="menu-lateral_titulo">Funcionalidades</p>
+        <div class="botao-adicionar">
+            <mat-list-item class="menu-item" role="listitem">
+                <mat-icon>add_circle</mat-icon>
+                Adicionar
+            </mat-list-item>
+        </div>
+        <div class="botao-configuracao">
+            <mat-list-item class="menu-item" role="listitem">
+                <mat-icon>settings</mat-icon>
+                Configuração
+            </mat-list-item>
+        </div>
+        <div class="botao-progresso">
+            <mat-list-item class="menu-item" role="listitem">
+                <mat-icon>bar_chart</mat-icon>
+                Progresso
+            </mat-list-item>
+        </div>
+        <div class="botao-cronograma">
+            <mat-list-item class="menu-item" role="listitem">
+                <mat-icon>calendar_month</mat-icon>
+                Cronograma
+            </mat-list-item>
+        </div>
+        <div class="botao-compartilhar">
+            <mat-list-item class="menu-item" role="listitem">
+                <mat-icon>share</mat-icon>
+                Compartilhar
+            </mat-list-item>
+        </div>
+        <div class="botao-ajuda">
+            <mat-list-item class="menu-item menu-last-item" role="listitem">
+                <mat-icon>info</mat-icon>
+                Ajuda
+            </mat-list-item>
+        </div>
+    </mat-list>
+</div>
 
-<!-- Lembrar de configurar o roteamento -->
+<!-- TODO: Lembrar de configurar o roteamento -->
