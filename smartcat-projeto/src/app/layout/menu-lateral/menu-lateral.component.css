@@ -2,13 +2,19 @@
     margin: 20px;
     background-color: #a08ec8;
     border-radius: 20px;
-    width: 30%;
+    width: 20%;
     height: 80%;
 
     display: flex;
     flex-direction: column;
 
     /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
+}
+
+.menu-lateral_botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .menu-lateral_titulo {
