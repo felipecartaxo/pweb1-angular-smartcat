@@ -1,22 +1,30 @@
-mat-list {
-  background-color: #a08ec8;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.barra-lateral {
+    margin-left: 10px;
+    /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
+}
 
-  /*max-width: 30%; !* Acho que dá pra melhorar isso *!*/
+.barra-lateral_titulo {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+mat-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .menu-item {
-  color: black;
+    color: black;
 }
 
 .menu-item:hover {
-  background-color: #848095;
+    background-color: #848095;
 }
 
 .menu-last-item {
-  /* Para setar este botão no final da página */
+    /* Para setar este botão no final da página */
 }
 
-/* Depois a gente dá uma olhada em como deixar os ícones e os textos alinhados */
+/* TODO: Depois a gente dê uma olhada em como deixar os ícones e os textos alinhados */
