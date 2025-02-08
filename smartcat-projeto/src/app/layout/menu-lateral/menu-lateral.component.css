@@ -1,5 +1,9 @@
 .barra-lateral {
-    margin-left: 10px;
+    margin: 20px;
+
+    background-color: #a08ec8;
+    border-radius: 20px;
+
     /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
 }
 
