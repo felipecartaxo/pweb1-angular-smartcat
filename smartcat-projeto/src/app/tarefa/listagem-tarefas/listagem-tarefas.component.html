@@ -1,0 +1,14 @@
+@for (tarefa of TAREFAS; track tarefa.titulo) {
+    <mat-card class="card-usuario" appearance="outlined">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Título: {{ tarefa.titulo }}</mat-card-title>
+
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <mat-card-subtitle>Descrição: {{ tarefa.descricao }}</mat-card-subtitle>
+            </p>
+        </mat-card-content>
+    </mat-card>
+}
