@@ -1,0 +1,16 @@
+:host {
+    background-color: #a08ec8;
+    border-radius: 20px;
+}
+
+mat-card {
+    border-radius: 20px;
+}
+
+mat-card-title {
+    font-weight: bold;
+}
+
+mat-card-content {
+    margin-top: 40px;
+}
