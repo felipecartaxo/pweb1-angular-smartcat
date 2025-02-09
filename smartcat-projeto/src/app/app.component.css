@@ -28,11 +28,11 @@ app-menu-lateral {
 }
 
 .container-rodape {
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
     margin-bottom: 20px;
     border: 1px solid black;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 
     background-color: #a08ec8;
     display: flex;
