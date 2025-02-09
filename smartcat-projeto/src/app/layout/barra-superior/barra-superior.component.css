@@ -6,9 +6,8 @@
     align-items: center;
     margin: 20px;
     padding: 20px;
-    border-radius: 20px;
-
     background-color: #a08ec8;
+    border-radius: 20px;
 
     /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
 }
@@ -21,7 +20,7 @@
 }
 
 .botao-smartcat:hover {
-    background-color: black;
+    background-color: #232222;
     color: white;
 }
 
@@ -32,17 +31,23 @@
 }
 
 .campo-pesquisa {
+    background-color: #b7b3c1;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
     flex-grow: 1;
     align-self: center;
 }
 
 .icone-pesquisa {;
-    padding-left: 20px;
+
 }
 
 .foto-usuario {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 20px;
 }
