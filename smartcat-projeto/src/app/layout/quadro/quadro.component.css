@@ -9,8 +9,8 @@
     gap: 10px;
 }
 
-.cards-container > app-quadro-card {
-}
+/*.cards-container > app-quadro-card {*/
+/*}*/
 
 .cards-container {
     display: flex;
