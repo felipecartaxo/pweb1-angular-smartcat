@@ -1,17 +1,18 @@
 .menu-lateral-container {
-    margin: 20px;
     background-color: #a08ec8;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
 }
 
-.menu-lateral_botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
+/*.menu-lateral_botoes {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: start;*/
+/*}*/
 
 .menu-lateral_titulo {
     font-size: 24px;
