@@ -1,0 +1,11 @@
+.botao-logout {
+    font-size: 24px;
+    border-radius: 50px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.botao-logout:hover {
+    background-color: #232222;
+    color: white;
+}

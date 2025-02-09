@@ -17,11 +17,34 @@ app-quadro {
     border-radius: 20px;
     background-color: #b7b3c1;
     flex-grow: 8;
-    flex-basis: 80%;
+    /*flex-basis: 80%;*/
     margin-bottom: 20px;
 }
 
 app-menu-lateral {
+
     flex-grow: 1;
-    flex-basis: 20%;
+    /*flex-basis: 20%;*/
 }
+
+.container-rodape {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-color: #a08ec8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    padding: 20px;
+    align-items: center;
+}
+
+app-botao-logout {
+    flex-grow: 2;
+}
+

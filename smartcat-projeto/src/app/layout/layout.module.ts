@@ -6,7 +6,7 @@ import { MatList, MatListItem } from "@angular/material/list";
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInput } from '@angular/material/input';
-import { MatButton } from '@angular/material/button';
+import {MatAnchor, MatButton} from '@angular/material/button';
 import { MatMenuModule} from '@angular/material/menu';
 import { QuadroComponent } from './quadro/quadro.component';
 import { TarefaModule } from '../tarefa/tarefa.module';
@@ -20,18 +20,24 @@ import {
 } from '@angular/material/card';
 import {MatChip, MatChipSet} from '@angular/material/chips';
 import { QuadroCardComponent } from './quadro-card/quadro-card.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import { BotaoLogoutComponent } from './botao-logout/botao-logout.component';
 
 @NgModule({
   declarations: [
     BarraSuperiorComponent,
     MenuLateralComponent,
     QuadroComponent,
-    QuadroCardComponent
+    QuadroCardComponent,
+    RodapeComponent,
+    BotaoLogoutComponent
   ],
     exports: [
         BarraSuperiorComponent,
         MenuLateralComponent,
-        QuadroComponent
+        QuadroComponent,
+        RodapeComponent,
+        BotaoLogoutComponent
     ],
     imports: [
         MatButton,
@@ -50,7 +56,8 @@ import { QuadroCardComponent } from './quadro-card/quadro-card.component';
         MatCardTitle,
         MatCardFooter,
         MatChipSet,
-        MatChip
+        MatChip,
+        MatAnchor
     ]
 })
 export class LayoutModule { }
