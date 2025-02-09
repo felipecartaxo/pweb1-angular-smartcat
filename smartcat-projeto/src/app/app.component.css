@@ -1,17 +1,27 @@
-.main {
+/*html, body {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
+.container-principal {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
+    height: 100%;
+    width: 100%;
 }
 
 app-quadro {
-    background-color: #5e5e1a;
-    flex-grow: 8;
-    margin-top: 20px;
+    margin-right: 20px;
     border-radius: 20px;
+    background-color: #a08ec8;
+    flex-grow: 8;
+    flex-basis: 80%;
+    margin-bottom: 20px;
 }
 
 app-menu-lateral {
-    flex-grow: 0.2;
+    flex-grow: 1;
+    flex-basis: 20%;
 }

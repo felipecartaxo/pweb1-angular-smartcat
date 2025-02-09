@@ -30,7 +30,7 @@ mat-list {
 mat-list-item span {
     color: black;
     display: inline-block;
-    width: 150px;
+    width: 10%;
 }
 
 .menu-item:hover {
