@@ -2,13 +2,9 @@
     margin: 20px;
     background-color: #a08ec8;
     border-radius: 20px;
-    width: 20%;
-    height: 80%;
 
     display: flex;
     flex-direction: column;
-
-    /*border: 1px solid gray; !* Coloquei isso aqui só pra ter noção dos limites do componente *!*/
 }
 
 .menu-lateral_botoes {
@@ -30,16 +26,19 @@ mat-list {
     flex-grow: 1;
 }
 
-.menu-item {
+mat-list-item span {
     color: black;
+    display: inline-block;
+    width: 150px;
 }
 
 .menu-item:hover {
     background-color: #848095;
+    border-radius: 10px;
 }
 
 .botao-ajuda {
-
+    /* TODO: Fazer com que esse botão fique no final da tela */
 }
 
 /* TODO: Depois a gente dê uma olhada em como deixar os ícones e os textos alinhados */

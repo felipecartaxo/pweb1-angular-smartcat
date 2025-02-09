@@ -1,4 +1,17 @@
-* {
+.main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+app-quadro {
+    background-color: #5e5e1a;
+    flex-grow: 8;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+app-menu-lateral {
+    flex-grow: 0.2;
 }

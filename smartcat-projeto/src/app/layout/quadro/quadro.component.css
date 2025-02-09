@@ -1,4 +1,11 @@
-* {
-    background-color: #a08ec8;
-    width: 50%;
+.main-app-quadro h1 {
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+app-listagem-tarefas {
+    background-color: #228080;
+    display: flex;
+    justify-content: space-around;
 }

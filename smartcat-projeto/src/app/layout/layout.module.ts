@@ -10,6 +10,15 @@ import { MatButton } from '@angular/material/button';
 import { MatMenuModule} from '@angular/material/menu';
 import { QuadroComponent } from './quadro/quadro.component';
 import { TarefaModule } from '../tarefa/tarefa.module';
+import {
+    MatCard,
+    MatCardContent,
+    MatCardFooter,
+    MatCardHeader,
+    MatCardSubtitle,
+    MatCardTitle
+} from '@angular/material/card';
+import {MatChip, MatChipSet} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -31,7 +40,15 @@ import { TarefaModule } from '../tarefa/tarefa.module';
         MatFormFieldModule,
         MatInput,
         MatMenuModule,
-        TarefaModule
+        TarefaModule,
+        MatCard,
+        MatCardContent,
+        MatCardHeader,
+        MatCardSubtitle,
+        MatCardTitle,
+        MatCardFooter,
+        MatChipSet,
+        MatChip
     ]
 })
 export class LayoutModule { }
