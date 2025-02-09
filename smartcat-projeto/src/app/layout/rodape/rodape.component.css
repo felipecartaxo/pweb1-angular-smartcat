@@ -1,0 +1,6 @@
+.rodape-grupo {
+    display: flex;
+    gap: 18px;
+    font-size: 16px;
+    align-items: center;
+}
