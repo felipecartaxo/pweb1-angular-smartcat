@@ -19,12 +19,14 @@ import {
     MatCardTitle
 } from '@angular/material/card';
 import {MatChip, MatChipSet} from '@angular/material/chips';
+import { QuadroCardComponent } from './quadro-card/quadro-card.component';
 
 @NgModule({
   declarations: [
     BarraSuperiorComponent,
     MenuLateralComponent,
-    QuadroComponent
+    QuadroComponent,
+    QuadroCardComponent
   ],
     exports: [
         BarraSuperiorComponent,
