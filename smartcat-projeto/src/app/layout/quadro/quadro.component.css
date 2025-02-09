@@ -4,6 +4,21 @@
     padding-bottom: 18px;
 }
 
+.main-app-quadro {
+    display: flex;
+    gap: 10px;
+}
+
+.cards-container > app-quadro-card {
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px
+}
+
 /*app-listagem-tarefas {*/
 /*    background-color: #228080;*/
 /*    display: flex;*/
