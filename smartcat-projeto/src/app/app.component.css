@@ -26,7 +26,6 @@ app-quadro {
 }
 
 app-menu-lateral {
-
     flex-grow: 1;
     height: auto;
     /*flex-basis: 20%;*/
@@ -35,7 +34,7 @@ app-menu-lateral {
 .container-rodape {
     /*margin-left: 20px;*/
     /*margin-right: 20px;*/
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     border: 1px solid black;
     /*border-radius: 20px;*/
 

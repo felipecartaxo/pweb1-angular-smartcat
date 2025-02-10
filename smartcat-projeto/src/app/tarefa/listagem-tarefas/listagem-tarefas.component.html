@@ -1,14 +1,11 @@
-@for (tarefa of TAREFAS; track tarefa.titulo) {
-    <mat-card class="card-usuario" appearance="outlined">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Título: {{ tarefa.titulo }}</mat-card-title>
-
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                <mat-card-subtitle>Descrição: {{ tarefa.descricao }}</mat-card-subtitle>
-            </p>
-        </mat-card-content>
-    </mat-card>
+<div class="card-tarefa-main">@for (tarefa of TAREFAS; track tarefa.titulo) {
+    <div class="card-tarefa">
+        <mat-card>
+            <mat-card-header><mat-card-title>{{ tarefa.titulo }}<div class="icons"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon></div></mat-card-title></mat-card-header>
+            <mat-card-subtitle>{{ tarefa.descricao }}</mat-card-subtitle>
+            <mat-card-content><p>Lorem ipsum dolor...</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
 }
+</div>
