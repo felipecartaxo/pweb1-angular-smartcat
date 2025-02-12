@@ -1,0 +1,35 @@
+<!--<app-listagem-tarefas></app-listagem-tarefas>-->
+<!--<app-cadastro-tarefas></app-cadastro-tarefas>-->
+
+<!--Após a inserção do bootstrap-->
+<div class="container">
+    <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+        <div class="form-group">
+            <label for="task">Tarefa</label>
+            <input type="text" class="form-control" id="task" placeholder="Digite a tarefa a ser registrada" ngModel name="task" required>
+            <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger">Campo obrigatório.</small>
+        </div>
+        <button [disabled]="taskForm.invalid" id="submitButton" type="submit" class="btn btn-dark">Inserir</button>
+    </form>
+
+    <hr>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Concluída</th>
+            <th scope="col">Remover</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let t of taskArray; index as i">
+            <td>{{t.taskName}}</td>
+            <td><input (change)="onCheck(i)" id="myCheckbox" type="checkbox"></td>
+            <td><button class="btn btn-danger btn-sm" (click)="onDelete(i)">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+

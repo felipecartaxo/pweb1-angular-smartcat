@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuadroCardComponent } from './quadro-card.component';
+import { QuadroTodoComponent } from './quadro-todo.component';
 
 describe('QuadroCardComponent', () => {
-  let component: QuadroCardComponent;
-  let fixture: ComponentFixture<QuadroCardComponent>;
+  let component: QuadroTodoComponent;
+  let fixture: ComponentFixture<QuadroTodoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [QuadroCardComponent]
+      declarations: [QuadroTodoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(QuadroCardComponent);
+    fixture = TestBed.createComponent(QuadroTodoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

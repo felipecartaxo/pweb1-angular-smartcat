@@ -51,9 +51,9 @@ export class Usuario {
     return this._tarefas;
   }
 
-  removerTarefa(tarefa: Tarefa): void {
-    this._tarefas = this._tarefas.filter(
-      t => t.titulo !== tarefa.titulo || t.data.getTime() !== tarefa.data.getTime()
-    );
-  }
+  // removerTarefa(tarefa: Tarefa): void {
+  //   this._tarefas = this._tarefas.filter(
+  //     t => t.titulo !== tarefa.titulo || t.data.getTime() !== tarefa.data.getTime()
+  //   );
+  // }
 }

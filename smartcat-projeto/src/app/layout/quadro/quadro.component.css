@@ -1,29 +1,21 @@
-.main-app-quadro h1 {
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
-
-.main-app-quadro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    /*background-color: yellow;*/
-}
-
-/*.cards-container > app-quadro-card {*/
+/*.main-app-quadro h1 {*/
+/*    text-align: center;*/
+/*    padding-top: 18px;*/
+/*    padding-bottom: 18px;*/
 /*}*/
 
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 10px;
-}
-
-/*app-listagem-tarefas {*/
-/*    background-color: #228080;*/
+/*.main-app-quadro {*/
 /*    display: flex;*/
-/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 10px;*/
 /*}*/
+
+/*.cards-container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: nowrap;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*Após inserir o bootstrap*/

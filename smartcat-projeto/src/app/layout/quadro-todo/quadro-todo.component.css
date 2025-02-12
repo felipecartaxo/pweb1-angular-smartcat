@@ -1,0 +1,34 @@
+/*:host {*/
+/*    background-color: #a08ec8;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*mat-card {*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*mat-card-title {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*mat-card-content {*/
+/*    margin-top: 40px;*/
+/*}*/
+
+/*Após a inserção do bootstrap*/
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#submitButton {
+    margin-top: 20px;
+}
+
+#myCheckbox {
+    margin-left: 30px;
+}
+
+.container th {
+    background-color: #a08ec8;
+}

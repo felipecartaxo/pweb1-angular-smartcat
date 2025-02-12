@@ -19,16 +19,17 @@ import {
     MatCardTitle
 } from '@angular/material/card';
 import {MatChip, MatChipSet} from '@angular/material/chips';
-import { QuadroCardComponent } from './quadro-card/quadro-card.component';
+import { QuadroTodoComponent } from './quadro-todo/quadro-todo.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { BotaoLogoutComponent } from './botao-logout/botao-logout.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     BarraSuperiorComponent,
     MenuLateralComponent,
     QuadroComponent,
-    QuadroCardComponent,
+    QuadroTodoComponent,
     RodapeComponent,
     BotaoLogoutComponent
   ],
@@ -57,7 +58,8 @@ import { BotaoLogoutComponent } from './botao-logout/botao-logout.component';
         MatCardFooter,
         MatChipSet,
         MatChip,
-        MatAnchor
+        MatAnchor,
+        FormsModule
     ]
 })
 export class LayoutModule { }
