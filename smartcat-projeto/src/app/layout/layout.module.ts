@@ -23,6 +23,7 @@ import { QuadroTodoComponent } from './quadro-todo/quadro-todo.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { BotaoLogoutComponent } from './botao-logout/botao-logout.component';
 import {FormsModule} from '@angular/forms';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +32,16 @@ import {FormsModule} from '@angular/forms';
     QuadroComponent,
     QuadroTodoComponent,
     RodapeComponent,
-    BotaoLogoutComponent
+    BotaoLogoutComponent,
+    TelaLoginComponent
   ],
     exports: [
         BarraSuperiorComponent,
         MenuLateralComponent,
         QuadroComponent,
         RodapeComponent,
-        BotaoLogoutComponent
+        BotaoLogoutComponent,
+        TelaLoginComponent
     ],
     imports: [
         MatButton,
