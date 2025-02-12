@@ -1,19 +1,20 @@
 <div class="container">
-    <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+    <!--  Cadastro  -->
+    <form (ngSubmit)="cadastrar(tarefaForm)" #tarefaForm="ngForm">
         <div class="form-group">
-            <label for="task">Título</label>
-            <input type="text" class="form-control" id="task" placeholder="Digite o título da tarefa" ngModel name="task" required/>
+            <label for="tarefa">Título</label>
+            <input type="text" class="form-control" id="tarefa" placeholder="Digite o título da tarefa" ngModel name="tarefa" required/>
         </div>
         <div class="form-group mt-2">
-            <label for="description">Descrição</label>
-            <textarea class="form-control" id="description" placeholder="Digite a descrição da tarefa" ngModel name="description"></textarea>
+            <label for="descricao">Descrição</label>
+            <textarea class="form-control" id="descricao" placeholder="Digite a descrição da tarefa" ngModel name="descricao"></textarea>
         </div>
-        <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger">O título é obrigatório.</small>
-        <button [disabled]="taskForm.invalid" id="submitButton" type="submit" class="btn btn-dark mt-2">Inserir</button>
+        <small *ngIf="tarefaForm.invalid && tarefaForm.dirty" id="errorMessage" class="form-text text-danger">O título é obrigatório.</small>
+        <button [disabled]="tarefaForm.invalid" id="submitButton" type="submit" class="btn btn-dark mt-2">Inserir</button>
     </form>
 
     <hr/>
-
+<!--  Listar e remover  -->
     <table class="table">
         <thead>
             <tr>
@@ -24,11 +25,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let t of taskArray; index as i" [class.table-success]="t.concluida">
+            <tr *ngFor="let t of tarefas; index as i" [class.table-success]="t.concluida">
                 <td>{{ t.titulo }}</td>
                 <td>{{ t.descricao }}</td>
-                <td><input type="checkbox" [checked]="t.concluida" (change)="onCheck(i)"/></td>
-                <td><button class="btn btn-danger btn-sm" (click)="onDelete(i)">Apagar</button></td>
+                <td><input type="checkbox" [checked]="t.concluida" (change)="marcarConcluido(i)"/></td>
+                <td><button class="btn btn-danger btn-sm" (click)="remover(i)">Apagar</button></td>
             </tr>
         </tbody>
     </table>

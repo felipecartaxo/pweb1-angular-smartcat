@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Tarefa } from '../../shared/model/tarefa';
+import { TAREFAS } from '../../shared/model/TAREFAS';
 
 @Component({
     selector: 'app-quadro-todo',
@@ -9,24 +10,27 @@ import { Tarefa } from '../../shared/model/tarefa';
     styleUrls: ['./quadro-todo.component.css'],
 })
 export class QuadroTodoComponent {
-    taskArray: Tarefa[] = []; // Array vazio para começar sem tarefas
-
+    // tarefas: Tarefa[] = []; // Array vazio para começar sem tarefas
+    tarefas = TAREFAS;
     constructor() {}
 
-    onSubmit(form: NgForm) {
-        const { task, description } = form.controls;
+    // Cadastrar
+    cadastrar(form: NgForm) {
+        const { tarefa, descricao } = form.controls;
 
-        if (task.value && description.value) {
-            this.taskArray.push(new Tarefa(task.value, description.value));
+        if (tarefa.value && descricao.value) {
+            this.tarefas.push(new Tarefa(tarefa.value, descricao.value));
             form.reset();
         }
     }
 
-    onDelete(index: number) {
-        this.taskArray.splice(index, 1);
+    // Remover
+    remover(index: number) {
+        this.tarefas.splice(index, 1);
     }
 
-    onCheck(index: number) {
-        this.taskArray[index].toggleConcluida();
+    // Destacar como "concluída"
+    marcarConcluido(index: number) {
+        this.tarefas[index].toggleConcluida();
     }
 }
