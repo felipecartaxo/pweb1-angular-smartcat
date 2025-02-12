@@ -7,6 +7,7 @@ import { MatBadge } from '@angular/material/badge';
 import { MatCardTitle } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
 import { CadastroTarefasComponent } from './cadastro-tarefas/cadastro-tarefas.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -27,7 +28,9 @@ import { CadastroTarefasComponent } from './cadastro-tarefas/cadastro-tarefas.co
         MatBadge,
         MatCardTitle,
         MatCardSubtitle,
-        MatButton
+        MatButton,
+        FormsModule,
+        ReactiveFormsModule
     ]
 })
 export class TarefaModule { }

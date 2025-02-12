@@ -1,1 +1,14 @@
-<p>cadastro-tarefas works!</p>
+<!--  Cadastro  -->
+<form (ngSubmit)="cadastrar(tarefaForm)" #tarefaForm="ngForm">
+    <div class="form-group">
+        <label for="tarefa">Título</label>
+        <input type="text" class="form-control" id="tarefa" placeholder="Digite o título da tarefa" ngModel name="tarefa" required/>
+    </div>
+    <div class="form-group mt-2">
+        <label for="descricao">Descrição</label>
+        <textarea class="form-control" id="descricao" placeholder="Digite a descrição da tarefa" ngModel name="descricao"></textarea>
+    </div>
+    <small *ngIf="tarefaForm.invalid && tarefaForm.dirty" id="errorMessage" class="form-text text-danger">O título é obrigatório.</small>
+    <button [disabled]="tarefaForm.invalid" id="botaoInserir" type="submit" class="btn btn-dark mt-2">Inserir</button>
+</form>
+<hr>

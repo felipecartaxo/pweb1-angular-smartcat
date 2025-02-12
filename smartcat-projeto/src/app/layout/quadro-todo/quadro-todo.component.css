@@ -1,24 +1,6 @@
-h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-#submitButton {
-    margin-top: 20px;
-    color: white;
-}
-
-#myCheckbox {
-    margin-left: 30px;
-}
-
 .container {
     padding: 20px;
     border-radius: 10px;
     background-color: #a08ec8;
     border: 1px solid black;
-}
-
-.container th {
-    background-color: #a08ec8;
 }

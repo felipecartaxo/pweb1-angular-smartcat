@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TAREFAS } from '../../shared/model/TAREFAS'
+import { TAREFAS } from '../../shared/model/TAREFAS';
 
 @Component({
   selector: 'app-listagem-tarefas',
@@ -10,8 +10,15 @@ import { TAREFAS } from '../../shared/model/TAREFAS'
 })
 export class ListagemTarefasComponent {
 
-    TAREFAS = TAREFAS;
+    tarefas = TAREFAS;
 
-    constructor() {
+    // Remover
+    remover(index: number) {
+        this.tarefas.splice(index, 1);
+    }
+
+    // Concluir tarefa
+    marcarConcluido(index: number) {
+        this.tarefas[index].toggleConcluida();
     }
 }
