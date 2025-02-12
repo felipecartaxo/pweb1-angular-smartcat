@@ -1,37 +1,32 @@
 import { Component } from '@angular/core';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { Tarefa } from '../../shared/model/tarefa';
 
 @Component({
-  selector: 'app-quadro-todo',
-  standalone: false,
-
-  templateUrl: './quadro-todo.component.html',
-  styleUrl: './quadro-todo.component.css'
+    selector: 'app-quadro-todo',
+    standalone: false,
+    templateUrl: './quadro-todo.component.html',
+    styleUrls: ['./quadro-todo.component.css'],
 })
 export class QuadroTodoComponent {
-    taskArray = [{taskName: "Teste 1", isCompleted: false}, {taskName: "Teste 2", isCompleted: false}, {taskName: "Teste 3", isCompleted: false}, {taskName: "Teste 4", isCompleted: false}, {taskName: "Teste 5", isCompleted: false}]
+    taskArray: Tarefa[] = []; // Array vazio para começar sem tarefas
 
     constructor() {}
 
     onSubmit(form: NgForm) {
-        console.log(form);
+        const { task, description } = form.controls;
 
-        this.taskArray.push({
-            taskName: form.controls["task"].value, isCompleted: false
-        })
-
-        form.reset();
+        if (task.value && description.value) {
+            this.taskArray.push(new Tarefa(task.value, description.value));
+            form.reset();
+        }
     }
 
     onDelete(index: number) {
-        console.log(index);
-
         this.taskArray.splice(index, 1);
     }
 
     onCheck(index: number) {
-        console.log(this.taskArray);
-
-        this.taskArray[index].isCompleted = !this.taskArray[index].isCompleted;
+        this.taskArray[index].toggleConcluida();
     }
 }
