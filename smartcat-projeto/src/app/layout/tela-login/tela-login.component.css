@@ -1,0 +1,44 @@
+.login-form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #848095;
+}
+
+mat-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #a08ec8;
+    padding: 60px 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+mat-card-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botao-login {
+    background-color: #b7b3c1;
+    color: black;
+    border-radius: 20px;
+}
+
+.botao-login:hover {
+    background-color: dimgray;
+    color: white;
+
+}
+
+mat-card-actions {
+    align-self: center;
+}

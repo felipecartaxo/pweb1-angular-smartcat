@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './tela-login.component.css'
 })
 export class TelaLoginComponent {
+    nomeUsuario = "";
+    senha = " ";
 
 }

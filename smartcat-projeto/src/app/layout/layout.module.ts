@@ -11,7 +11,7 @@ import { MatMenuModule} from '@angular/material/menu';
 import { QuadroComponent } from './quadro/quadro.component';
 import { TarefaModule } from '../tarefa/tarefa.module';
 import {
-    MatCard,
+    MatCard, MatCardActions,
     MatCardContent,
     MatCardFooter,
     MatCardHeader,
@@ -22,7 +22,7 @@ import {MatChip, MatChipSet} from '@angular/material/chips';
 import { QuadroTodoComponent } from './quadro-todo/quadro-todo.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { BotaoLogoutComponent } from './botao-logout/botao-logout.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 
 @NgModule({
@@ -62,7 +62,9 @@ import { TelaLoginComponent } from './tela-login/tela-login.component';
         MatChipSet,
         MatChip,
         MatAnchor,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule,
+        MatCardActions
     ]
 })
 export class LayoutModule { }

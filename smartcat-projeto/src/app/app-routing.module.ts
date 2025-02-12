@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListagemTarefasComponent } from './tarefa/listagem-tarefas/listagem-tarefas.component';
+import {QuadroTodoComponent} from './layout/quadro-todo/quadro-todo.component';
+import {TelaLoginComponent} from './layout/tela-login/tela-login.component';
 
 const routes: Routes = [
     {
-        path: 'listagem-tarefas',
-        component: ListagemTarefasComponent
+        path: 'todo',
+        component: QuadroTodoComponent
+    },
+    {
+        path: "login",
+        component: TelaLoginComponent
     }
 ];
 
