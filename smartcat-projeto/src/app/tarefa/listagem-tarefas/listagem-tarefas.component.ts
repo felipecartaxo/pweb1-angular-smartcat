@@ -31,6 +31,7 @@ export class ListagemTarefasComponent {
         );
     }
 
+    // TODO: Corrigir na próxima etapa
     // Concluir tarefa
     marcarConcluido(index: number) {
         this.tarefas[index].toggleConcluida();

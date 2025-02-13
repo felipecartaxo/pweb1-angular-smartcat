@@ -9,11 +9,26 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let t of tarefas; index as i" [class.table-success]="t.concluida">
-        <td>{{ t.titulo }}</td>
-        <td>{{ t.descricao }}</td>
-        <td><input type="checkbox" [checked]="t.concluida" (change)="marcarConcluido(i)"/></td>
-        <td><button class="btn btn-danger btn-sm" (click)="remover(t.id!, i)">Apagar</button></td>
-    </tr>
+        @for (t of tarefas; track t.id; let i = $index) {
+            <tr [class.table-success]="t.concluida">
+                <td>{{ t.titulo }}</td>
+                <td>{{ t.descricao }}</td>
+                <td>
+                    <input
+                        type="checkbox"
+                        [checked]="t.concluida"
+                        (change)="marcarConcluido(i)"
+                    />
+                </td>
+                <td>
+                    <button
+                        class="btn btn-danger btn-sm"
+                        (click)="remover(t.id!, i)"
+                    >
+                        Apagar
+                    </button>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

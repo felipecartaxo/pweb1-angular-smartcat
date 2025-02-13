@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ListagemTarefasComponent } from '../../tarefa/listagem-tarefas/listagem-tarefas.component';
 
 @Component({
   selector: 'app-quadro',

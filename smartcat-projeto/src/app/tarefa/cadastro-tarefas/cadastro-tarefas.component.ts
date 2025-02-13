@@ -20,10 +20,10 @@ export class CadastroTarefasComponent {
 
     // Cadastrar
     cadastrar(form: NgForm) {
-        const { tarefa, descricao } = form.controls;
+        const { titulo, descricao } = form.controls;
 
-        if (tarefa.value && descricao.value) {
-            this.tarefaService.cadastrar(new Tarefa(tarefa.value, descricao.value)).subscribe();
+        if (titulo.value && descricao.value) {
+            this.tarefaService.cadastrar(new Tarefa(titulo.value, descricao.value)).subscribe();
             form.reset();
         }
     }
