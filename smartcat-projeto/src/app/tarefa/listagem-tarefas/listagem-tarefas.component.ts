@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { TAREFAS } from '../../shared/model/TAREFAS';
+import {TarefaService} from '../../shared/shared/services/tarefa.service';
+import {Tarefa} from '../../shared/model/tarefa';
 
 @Component({
   selector: 'app-listagem-tarefas',
@@ -9,12 +10,25 @@ import { TAREFAS } from '../../shared/model/TAREFAS';
   styleUrl: './listagem-tarefas.component.css'
 })
 export class ListagemTarefasComponent {
+    tarefas: Tarefa[] = [];
 
-    tarefas = TAREFAS;
+    constructor(private service: TarefaService) {this.atualizar()
+        console.log(this.tarefas)
+    }
+
+    atualizar() {
+        this.service.listar().subscribe(aux => this.tarefas = aux);
+    }
 
     // Remover
-    remover(index: number) {
-        this.tarefas.splice(index, 1);
+    remover(id: string, index: number) {
+
+        this.service.remover(id).subscribe(
+            () => {
+                const tarefaIndx = this.tarefas.findIndex(tarefa => tarefa.id === id);
+                this.tarefas.splice(tarefaIndx, 1);
+            }
+        );
     }
 
     // Concluir tarefa

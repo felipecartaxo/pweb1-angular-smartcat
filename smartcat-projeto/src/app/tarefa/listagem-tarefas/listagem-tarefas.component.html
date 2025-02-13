@@ -13,7 +13,7 @@
         <td>{{ t.titulo }}</td>
         <td>{{ t.descricao }}</td>
         <td><input type="checkbox" [checked]="t.concluida" (change)="marcarConcluido(i)"/></td>
-        <td><button class="btn btn-danger btn-sm" (click)="remover(i)">Apagar</button></td>
+        <td><button class="btn btn-danger btn-sm" (click)="remover(t.id!, i)">Apagar</button></td>
     </tr>
     </tbody>
 </table>

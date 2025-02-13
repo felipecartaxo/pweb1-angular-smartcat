@@ -14,6 +14,7 @@ import { MatSidenavContainer } from '@angular/material/sidenav';
 import { MatFormField } from "@angular/material/form-field";
 import { FormsModule } from '@angular/forms';
 import { LayoutModule } from "./layout/layout.module";
+import {provideHttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LayoutModule } from "./layout/layout.module";
         LayoutModule
     ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+      provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
